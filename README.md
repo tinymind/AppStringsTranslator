@@ -1,13 +1,13 @@
 # AppStringsTranslator
-Automatically translate iOS App language into multi-language, depends on Baidu translate. 依赖百度翻译，自动把 App 语言文件翻译成多国语言。
+Automatically translate iOS App language into multi-language, depends on Baidu translate. 依赖百度翻译，自动把 iOS App 语言文件翻译成多国语言。
 
 ## Usage
 
 1. Modify `AppStringsTranslator.py`, fill your own Baidu `AppKey/SecretKey`, See [this](http://api.fanyi.baidu.com/api/trans/product/desktop?req=developer).
-2. Run script from terminal.
-3. Input strings file name.
-4. Input from language.
-5. Input to language list, split by space.
+2. Run script from terminal. eg: `python AppStringsTranslator.py`.
+3. Input strings file name. eg: `Localizable.strings`
+4. Input from language. eg: `zh`
+5. Input to language list, split by space. eg: `en cht jp kor`
 6. Wait and done.
 
 ``` bash
@@ -40,7 +40,7 @@ All done!
 
 ``` bash
 语言简写               名称
-auto                自动检测
+auto                自动检测(可以作为源语言，但不能是目标语言)
 zh                  中文
 en                  英语
 yue                 粤语
@@ -73,7 +73,7 @@ vie                 越南语
 
 ## Q & A
 
-Q: Why do not use Google translate? 
+Q: Why do not use Google translate?   
 A: In China, Google's services are not stable.  
  
 
